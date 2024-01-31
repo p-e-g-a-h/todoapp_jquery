@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags, title, and favicon -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do App</title>
+  <link rel="icon" type="image/vnd.microsoft.icon" href="./favicon.ico">
+  <!-- Bootstrap CSS and Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  
+</head>
+<body class="bg-light">
+
+  <div class="container-fluid my-5 d-flex flex-column justify-content-center align-items-center">
+    <h1 class="text-primary mt-3 mb-5">To Do App</h1>
+    <div class="col-md-5 border p-3 rounded">
+      <div id="add-edit-container" class="d-flex flex-row gap-2">
+        <!-- todo text input and create/edit, cancel button -->
+        <input type="text" id="textInput" placeholder="Enter new todo..." class="form-control">
+        <button id="addEditBtn" onclick="addHandler()" class="btn btn-outline-primary">Add</button>
+        <button id="cancelBtn" onclick="changeEditToAdd()" class="btn btn-outline-danger d-none">Cancel</button>  
+      </div>
+      
+      <div id="allTodosContainer" class="mt-4"></div>
+    </div>
+  </div>
+
+
+  <!-- bootstrap scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>  
+  <!-- personal scripts -->
+  <script type="text/javascript" src="./index.js"></script>
+
+</body>
+</html>
